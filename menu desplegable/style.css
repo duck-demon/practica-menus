@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face{
+    font-family: font;
+    src: url("font baby shrimp.ttf");
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: font;
+}
+header a{
+    color: #DF3232;
+    float: left;
+    margin-left: 2em;
+    padding: 1em;
+}
+ /*inicio del la navegacion*/
+nav{
+    height: 50px;
+    background-color: #000000;
+
+}
+nav ul{
+    float: right; /*ubica los elementos de el nav*/
+    margin-right: 2em;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: #ffffff;
+    padding: 0 2em;
+    display: block;
+    line-height: 50px;
+    font-size: 1em;
+    background-color: #000000;
+    transition: .4s;
+}
+nav ul li a:hover{ /*action es el nombre que le di a la clase*/
+    color: #DF3232;
+}
+nav ul li:hover > ul{ /*efecto del menu desplegable || es el comienso*/
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+nav ul ul{
+    position: absolute;
+    top: 50px;
+    opacity: 0; /*son parte opacity y visibility de efecto del menu desplegable || es el fin*/
+    visibility: hidden;
+}
+nav ul ul li{
+    width: 6em;
+    display: list-item;
+    position: relative;
+    border: 1px #DF3232 solid;
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul{
+    border-top: none;
+
+}
+nav ul ul ul li{
+    position: relative;
+    top: -50px;
+    left: 6rem;
+}
