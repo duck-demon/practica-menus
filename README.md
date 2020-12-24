@@ -1,3 +1,3 @@
-#practicas de html y css
+# practicas de html y css
 
-estas son las practicas de css3 y html5
+estas son las practicas de navegaciones con css3 y html5
